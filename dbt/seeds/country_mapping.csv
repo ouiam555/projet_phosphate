@@ -1,0 +1,92 @@
+raw_country,standard_country,is_active
+USA,United States,TRUE
+Russian Federation,Russia,TRUE
+Rep. of Korea,South Korea,TRUE
+"Korea, Rep.",South Korea,TRUE
+Viet Nam,Vietnam,TRUE
+Türkiye,Turkey,TRUE
+Turkiye,Turkey,TRUE
+"Egypt, Arab Rep.",Egypt,TRUE
+"Iran, Islamic Rep.",Iran,TRUE
+Syrian Arab Republic,Syria,TRUE
+United Rep. of Tanzania,Tanzania,TRUE
+Rep. of Moldova,Moldova,TRUE
+Lao PDR,Laos,TRUE
+Lao People's Dem. Rep.,Laos,TRUE
+Kyrgyz Republic,Kyrgyzstan,TRUE
+Bosnia Herzegovina,Bosnia and Herzegovina,TRUE
+Cote d'Ivoire,Côte d'Ivoire,TRUE
+Dem. Rep. of the Congo,Democratic Republic of the Congo,TRUE
+"Congo, Dem. Rep.",Democratic Republic of the Congo,TRUE
+"Congo, Rep.",Republic of the Congo,TRUE
+Dominican Rep.,Dominican Republic,TRUE
+"Bahamas, The",Bahamas,TRUE
+"Gambia, The",Gambia,TRUE
+Morocco and Western Sahara,Morocco,TRUE
+Western Sahara,Morocco,TRUE
+High income,,FALSE
+Low income,,FALSE
+Lower middle income,,FALSE
+Upper middle income,,FALSE
+Middle income,,FALSE
+Low & middle income,,FALSE
+World,,FALSE
+Arab World,,FALSE
+European Union,,FALSE
+Euro area,,FALSE
+OECD members,,FALSE
+Africa Eastern and Southern,,FALSE
+Africa Western and Central,,FALSE
+"Areas, nes",,FALSE
+Caribbean small states,,FALSE
+Central Europe and the Baltics,,FALSE
+Early-demographic dividend,,FALSE
+East Asia & Pacific,,FALSE
+"East Asia & Pacific (IDA & IBRD countries)",,FALSE
+"East Asia & Pacific (excluding high income)",,FALSE
+Europe & Central Asia,,FALSE
+"Europe & Central Asia (IDA & IBRD countries)",,FALSE
+"Europe & Central Asia (excluding high income)",,FALSE
+"Heavily indebted poor countries (HIPC)",,FALSE
+IBRD only,,FALSE
+"IDA & IBRD total",,FALSE
+IDA blend,,FALSE
+IDA only,,FALSE
+IDA total,,FALSE
+Late-demographic dividend,,FALSE
+Latin America & Caribbean,,FALSE
+"Latin America & Caribbean (excluding high income)",,FALSE
+"Latin America & the Caribbean (IDA & IBRD countries)",,FALSE
+"Least developed countries: UN classification",,FALSE
+"Middle East, North Africa, Afghanistan & Pakistan",,FALSE
+"Middle East, North Africa, Afghanistan & Pakistan (IDA & IBRD)",,FALSE
+"Middle East, North Africa, Afghanistan & Pakistan (excluding high income)",,FALSE
+North America,,FALSE
+"Other Asia, nes",,FALSE
+"Other Europe, nes",,FALSE
+Other small states,,FALSE
+Pacific island small states,,FALSE
+Post-demographic dividend,,FALSE
+Pre-demographic dividend,,FALSE
+Small states,,FALSE
+South Asia,,FALSE
+"South Asia (IDA & IBRD)",,FALSE
+Special Categories,,FALSE
+Sub-Saharan Africa,,FALSE
+"Sub-Saharan Africa (IDA & IBRD countries)",,FALSE
+"Sub-Saharan Africa (excluding high income)",,FALSE
+Free Zones,,FALSE
+Bolivia (Plurinational State of),Bolivia,TRUE
+Br. Virgin Isds,British Virgin Islands,TRUE
+Cayman Isds,Cayman Islands,TRUE
+Curacao,Curaçao,TRUE
+"China, Hong Kong SAR",Hong Kong,TRUE
+"Hong Kong SAR, China",Hong Kong,TRUE
+"China, Macao SAR",Macao,TRUE
+"Macao SAR, China",Macao,TRUE
+Slovak Republic,Slovakia,TRUE
+St. Kitts and Nevis,Saint Kitts and Nevis,TRUE
+St. Lucia,Saint Lucia,TRUE
+St. Vincent and the Grenadines,Saint Vincent and the Grenadines,TRUE
+"Venezuela, RB",Venezuela,TRUE
+West Bank and Gaza,Palestine,TRUE

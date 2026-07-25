@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: stg_price
+    description: Monthly phosphate rock prices.
+
+    columns:
+
+      - name: price_date
+        description: Monthly price date.
+        tests:
+          - not_null
+          - unique
+
+      - name: phosphate_price_usd
+        description: Phosphate price in USD per metric ton.
+        tests:
+          - not_null

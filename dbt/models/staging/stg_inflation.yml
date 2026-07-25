@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: stg_inflation
+    columns:
+
+      - name: country
+        tests:
+          - not_null
+
+      - name: country_code
+
+      - name: inflation_year
+        tests:
+          - not_null
+
+      - name: inflation_rate
+        tests:
+          - not_null

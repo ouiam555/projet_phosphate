@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: dim_commodity
+    description: Commodity dimension for import and export analysis.
+
+    columns:
+      - name: commodity_key
+        tests:
+          - not_null
+          - unique
+
+      - name: commodity_code
+        tests:
+          - not_null
+          - unique
+
+      - name: commodity_name
+        tests:
+          - not_null

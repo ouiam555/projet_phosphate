@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: bronze
+    database: OCP_ANALYTICS
+    schema: BRONZE
+
+    tables:
+      - name: PRICE_RAW
+      - name: PRODUCTION_RAW
+      - name: IMPORT_RAW
+      - name: EXPORT_RAW
+      - name: INFLATION_RAW

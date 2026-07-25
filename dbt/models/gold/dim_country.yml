@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: dim_country
+    description: Standardized country dimension used across all fact tables.
+
+    columns:
+      - name: country_key
+        tests:
+          - not_null
+          - unique
+
+      - name: country_name
+        tests:
+          - not_null
+          - unique

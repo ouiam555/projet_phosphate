@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: silver_inflation
+    description: Clean inflation data ready for analytics.
+
+    columns:
+      - name: country
+        tests:
+          - not_null
+
+      - name: inflation_year
+        tests:
+          - not_null
+
+      - name: inflation_rate
+        tests:
+          - not_null

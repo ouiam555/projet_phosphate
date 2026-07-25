@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: silver_production
+    description: Clean phosphate production data ready for analytics.
+
+    columns:
+      - name: production_year
+        tests:
+          - not_null
+
+      - name: country
+        tests:
+          - not_null
+
+      - name: production_ktons
+        tests:
+          - not_null

@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: silver_price
+    description: Clean phosphate price data ready for analytics.
+
+    columns:
+
+      - name: price_date
+        tests:
+          - not_null
+          - unique
+
+      - name: phosphate_price_usd
+        tests:
+          - not_null
