@@ -44,6 +44,7 @@
 #
 # Feel free to modify this file to suit your needs.
 ---
+name: phosphate
 x-airflow-common:
   &airflow-common
 

@@ -1,20 +1,26 @@
 from datetime import datetime, timedelta
 
-from airflow import DAG
+from airflow.sdk import DAG
 from airflow.providers.smtp.notifications.smtp import send_smtp_notification
 from airflow.providers.standard.operators.bash import BashOperator
 
+
+# ==========================
+# Email Notifications
+# ==========================
 
 failure_email = send_smtp_notification(
     to="elkhalfiouiam5@gmail.com",
     from_email="elkhalfiouiam5@gmail.com",
     subject="[FAILED] Phosphate Pipeline",
     html_content="""
-        <h3>Phosphate Pipeline Failed</h3>
+        <h2 style="color:red;"> Phosphate Pipeline Failed</h2>
+
         <p><strong>DAG:</strong> {{ dag.dag_id }}</p>
         <p><strong>Task:</strong> {{ task_instance.task_id }}</p>
-        <p><strong>Execution date:</strong> {{ logical_date }}</p>
-        <p>Please check Airflow logs for more details.</p>
+        <p><strong>Execution Date:</strong> {{ logical_date }}</p>
+
+        <p>Please check the Airflow logs.</p>
     """,
     smtp_conn_id="smtp_default",
 )
@@ -24,22 +30,33 @@ success_email = send_smtp_notification(
     from_email="elkhalfiouiam5@gmail.com",
     subject="[SUCCESS] Phosphate Pipeline",
     html_content="""
-        <h3>Phosphate Pipeline Completed Successfully</h3>
+        <h2 style="color:green;"> Phosphate Pipeline Completed Successfully</h2>
+
         <p><strong>DAG:</strong> {{ dag.dag_id }}</p>
-        <p><strong>Execution date:</strong> {{ logical_date }}</p>
+        <p><strong>Execution Date:</strong> {{ logical_date }}</p>
+
         <p>All pipeline tasks completed successfully.</p>
     """,
     smtp_conn_id="smtp_default",
 )
 
 
+# ==========================
+# Default Arguments
+# ==========================
+
 default_args = {
     "owner": "airflow",
     "depends_on_past": False,
     "retries": 2,
     "retry_delay": timedelta(minutes=5),
+    "on_failure_callback": failure_email,
 }
 
+
+# ==========================
+# DAG
+# ==========================
 
 with DAG(
     dag_id="phosphate_pipeline",
@@ -50,8 +67,6 @@ with DAG(
     catchup=False,
     max_active_runs=1,
     tags=["phosphate", "dbt", "snowflake"],
-    on_failure_callback=failure_email,
-    on_success_callback=success_email,
 ) as dag:
 
     check_project_files = BashOperator(
@@ -130,6 +145,7 @@ with DAG(
 
         echo "dbt build completed successfully."
         """,
+        on_success_callback=success_email,
     )
 
     (
