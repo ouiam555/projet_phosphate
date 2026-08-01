@@ -1,41 +1,66 @@
+# ==========================
 # Python
+# ==========================
 .venv/
 venv/
 __pycache__/
 *.py[cod]
 *.pyo
 
-# Environment variables
+# ==========================
+# Environment
+# ==========================
 .env
 **/.env
 
+# ==========================
 # Airflow
+# ==========================
 airflow/logs/
 airflow/config/
 airflow/plugins/
 
-# General logs
+# ==========================
+# dbt
+# ==========================
+dbt/target/
+dbt/logs/
+dbt_packages/
+
+# ==========================
+# Temporary data
+# ==========================
+data/temp/
+
+# ==========================
+# Logs
+# ==========================
 logs/
 *.log
 
-# dbt
-dbt/target/
-dbt_packages/
-target/
-
+# ==========================
 # Jupyter
+# ==========================
 .ipynb_checkpoints/
 
-# OS
-.DS_Store
-Thumbs.db
-
-# VS Code
-.vscode/
-
+# ==========================
 # Pytest
+# ==========================
 .pytest_cache/
 
+# ==========================
 # Coverage
+# ==========================
 .coverage
 htmlcov/
+
+# ==========================
+# VS Code
+# ==========================
+.vscode/
+
+# ==========================
+# OS
+# ==========================
+.DS_Store
+Thumbs.db

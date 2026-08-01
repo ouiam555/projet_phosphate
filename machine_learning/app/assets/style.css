@@ -52,10 +52,13 @@ body,
 
 [data-testid="stMainBlockContainer"] {
     max-width: 1550px !important;
-    padding-top: 2.2rem !important;
-    padding-bottom: 3rem !important;
-}
 
+    padding-top: 6rem !important;
+    padding-bottom: 3rem !important;
+
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+}
 
 /* =====================================================
    STREAMLIT HEADER
@@ -830,4 +833,11 @@ div {
         );
 
     border-radius: 999px;
+}
+header[data-testid="stHeader"]{
+    height:70px !important;
+}
+
+[data-testid="stMainBlockContainer"]{
+    margin-top:20px !important;
 }
